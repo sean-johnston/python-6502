@@ -1,0 +1,24 @@
+********************************
+* Mapping for input characters
+*
+* When a key is proessed on the keyboard, if it is
+* an ANSI sequence, that is in the list, it will
+* be translated to a single character 
+* 
+* IN_MAP_<ascii>=<ansi-sequence>
+*
+********************************
+
+IN_MAP_$13=^[1~   * HOME
+IN_MAP_$94=^[2~   * INSERT
+IN_MAP_$7F=^[3~   * DELETE
+IN_MAP_$93=^[4~   * END
+IN_MAP_$1D=^[C    * RIGHT
+IN_MAP_$9D=^[D    * LEFT
+
+*IN_MAP_$13=$1B   * HOME
+*IN_MAP_$94=^[2~   * INSERT
+*IN_MAP_$7F=^[3~   * DELETE
+*IN_MAP_$93=^[4~   * END
+*IN_MAP_$1D=^[C    * RIGHT
+*IN_MAP_$9D=^[D    * LEFT

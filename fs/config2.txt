@@ -1,0 +1,5 @@
+!INCLUDE(config-common.txt)
+!INCLUDE(config-pico-pins.txt)
+!INCLUDE(config-pet-outmap.txt)
+!INCLUDE(config-inmap.txt)
+

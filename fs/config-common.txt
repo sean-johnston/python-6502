@@ -1,0 +1,33 @@
+SHOW_OUTPUT=0
+
+********************************
+* ROM file name (Default) roms.txt
+********************************
+ROM-FILE=roms.txt
+
+********************************
+* Serial Flow Control
+* 0 = Auto
+* 1 = None
+* 2 = RTS/CTS
+* 3 = XON/XOFF
+********************************
+SERIAL-FLOW=0
+
+********************************
+* LCD Installed
+* 0 = No
+* 1 = Yes
+********************************
+LCD-INSTALLED=1
+
+********************************
+* I/O Emulation
+* 0 = Auto
+* 1 = None
+* 2 = VIA Full (Pico GPIO)
+* 3 = I/O Only (Pico GPIO)
+* 4 = VIA Full (Expansion Board)
+* 5 = I/O Only (Expansion Board)
+********************************
+IO-EMULATION=0

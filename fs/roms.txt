@@ -1,0 +1,28 @@
+* ROM desc. = String that will appear on the menu
+* ROM file  = Binary file of the ROM
+* ROM start = Starting address of ROM. If begins with "$",
+*             it is a hexadecimal address
+* VIA       = Address that the VIA chip is located. If
+*             begins with "$" it is a hexadecimal address
+* I/O:6551  = Address were the I/O is located. 0 means no
+*             IO. If there is a ":", this specifieds the
+*             location of the 6551 chip. If this is not
+*             specified, it will be 16 bytes above the
+*             I/O starting address. If this begins with
+*             "$", it is a hexadecimal address
+* ROM RO    = If there is a sixth value, this specifieds
+*             that the rom is read only. This can be any
+*             value. I just needs to exist
+*
+* ROM desc.    ,ROM file       ,ROM start    , VIA ,I/O:6551 
+Taliforth      ,forth.bin      ,$8000        ,$D000,$F000
+WOZMon         ,wozmon.bin     ,$fe00        ,$D000,$F000
+Microsoft Basic,msbasic.bin    ,$a000        ,$D000,$d100,1
+Hello World    ,hello-world.bin,$ff00        ,$D000,$F000
+Echo           ,echo.bin       ,$ff00        ,$D000,$F000
+Echo 2         ,echo2.bin      ,$ff00        ,$D000,$F000
+LCD Test       ,lcd.bin        ,$fe00        ,$D000,$F000
+Taliforth 2    ,taliforth2.bin ,$8000        ,$D000,$F000
+EH Basic       ,ehbasic.bin    ,$0000        ,$D000,$F000
+MicroChess     ,microchess.bin ,$1000        ,$D000,$F000
+6551 Echo      ,6551.bin       ,$ff00        ,$D000,0:$F000

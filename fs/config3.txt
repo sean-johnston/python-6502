@@ -1,0 +1,4 @@
+!INCLUDE(config-common.txt)
+!INCLUDE(config-pico-pins.txt)
+!INCLUDE(config-chess-outmap.txt)
+!INCLUDE(config-inmap.txt)

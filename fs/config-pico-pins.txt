@@ -1,0 +1,42 @@
+* ******************************
+* I/O Pins if Pico GPIO for VIA
+*
+* Specify whether the pin is a VIA pin or not
+* for the Pi Pico. Values are:
+*   VIA - VIA I/O pin
+*   RESERVED - Pin is used by something else
+*
+* The VIA pins start with PA0, going up to 
+* PA7. The next pin is PB0, going up to 
+* PB7. If there is more VIA pins specified
+* than actual pins, they are ignored. If
+* you don't have 16 VIA pins, the rest are 
+* not assigned to a pin on the Pi Pico.
+********************************
+GPIO-0=RESERVED  * Serial RX
+GPIO-1=RESERVED  * Serial TX
+GPIO-2=RESERVED  * Serial CTS
+GPIO-3=RESERERD  * Serial RTS
+GPIO-4=RESERVED  * PA0
+GPIO-5=RESERVED  * PA1
+GPIO-6=RESERVED  * PA2
+GPIO-7=RESERVED  * PA3
+GPIO-8=RESERVED  * SD Card MISO
+GPIO-9=RESERVED  * SD Card CS
+GPIO-10=RESERVED * SD Card SCLK
+GPIO-11=RESERVED * SD Card MOSI
+GPIO-12=VIA      * PA4
+GPIO-13=VIA      * PA5
+GPIO-14=VIA      * PA6
+GPIO-15=VIA      * PA7
+
+GPIO-16=VIA      * PB0
+GPIO-17=VIA      * PB1
+GPIO-18=VIA      * PB2
+GPIO-19=VIA      * PB3
+GPIO-20=VIA      * PB4
+GPIO-21=VIA      * PB5
+GPIO-22=VIA      * PB6
+GPIO-26=VIA      * PB7
+GPIO-27=RESERVED * Unused
+GPIO-28=RESERVED * Unused

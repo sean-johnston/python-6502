@@ -1,0 +1,4 @@
+C64 Configuration,config.txt
+PET Configuration,config2.txt
+Chess Configuration,config3.txt
+

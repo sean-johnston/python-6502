@@ -1,0 +1,4 @@
+echo $1.asm
+echo $1.bin
+./vasm6502_oldstyle -wdc02 -Fbin -dotdir $1.asm -o $1.bin
+cp $1.bin ../fs

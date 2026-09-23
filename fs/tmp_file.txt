@@ -1,0 +1,221 @@
+SHOW_OUTPUT=0
+********************************
+* ROM file name (Default) roms.txt
+********************************
+ROM-FILE=roms.txt
+********************************
+* Serial Flow Control
+* 0 = Auto
+* 1 = None
+* 2 = RTS/CTS
+* 3 = XON/XOFF
+********************************
+SERIAL-FLOW=0
+********************************
+* LCD Installed
+* 0 = No
+* 1 = Yes
+********************************
+LCD-INSTALLED=1
+********************************
+* I/O Emulation
+* 0 = Auto
+* 1 = None
+* 2 = VIA Full (Pico GPIO)
+* 3 = I/O Only (Pico GPIO)
+* 4 = VIA Full (Expansion Board)
+* 5 = I/O Only (Expansion Board)
+********************************
+IO-EMULATION=0
+* ******************************
+* I/O Pins if Pico GPIO for VIA
+*
+* Specify whether the pin is a VIA pin or not
+* for the Pi Pico. Values are:
+*   VIA - VIA I/O pin
+*   RESERVED - Pin is used by something else
+*
+* The VIA pins start with PA0, going up to
+* PA7. The next pin is PB0, going up to
+* PB7. If there is more VIA pins specified
+* than actual pins, they are ignored. If
+* you don't have 16 VIA pins, the rest are
+* not assigned to a pin on the Pi Pico.
+********************************
+GPIO-0=RESERVED  * Serial RX
+GPIO-1=RESERVED  * Serial TX
+GPIO-2=RESERVED  * Serial CTS
+GPIO-3=RESERERD  * Serial RTS
+GPIO-4=RESERVED  * PA0
+GPIO-5=RESERVED  * PA1
+GPIO-6=RESERVED  * PA2
+GPIO-7=RESERVED  * PA3
+GPIO-8=RESERVED  * SD Card MISO
+GPIO-9=RESERVED  * SD Card CS
+GPIO-10=RESERVED * SD Card SCLK
+GPIO-11=RESERVED * SD Card MOSI
+GPIO-12=VIA      * PA4
+GPIO-13=VIA      * PA5
+GPIO-14=VIA      * PA6
+GPIO-15=VIA      * PA7
+GPIO-16=VIA      * PB0
+GPIO-17=VIA      * PB1
+GPIO-18=VIA      * PB2
+GPIO-19=VIA      * PB3
+GPIO-20=VIA      * PB4
+GPIO-21=VIA      * PB5
+GPIO-22=VIA      * PB6
+GPIO-26=VIA      * PB7
+GPIO-27=RESERVED * Unused
+GPIO-28=RESERVED * Unused
+********************************
+* Mapping for output characters
+*
+* When a character is sent to the output
+* what key sequence does it represent.
+*
+* OUT_MAP_<ascii>=<comma-delimited-seq|ansi-sequence|unicode>
+*
+* This uses unicode for the C64 Pro Mono font
+********************************
+OUT_MAP_$90=^[30m   * Black         30
+OUT_MAP_$1C=^[31m   * Red           31
+OUT_MAP_$1E=^[32m   * Green         32
+OUT_MAP_$1F=^[34m   * Blue          34
+OUT_MAP_$81=^[35m   * Orange        35 (Magenta)
+OUT_MAP_$9C=^[35m   * Purple        35
+OUT_MAP_$9B=^[37m   * Light Gray    37
+OUT_MAP_$98=^[37m   * Medium Gray   37
+OUT_MAP_$97=^[90m   * Dark Gray     90
+OUT_MAP_$96=^[91m   * Light Red     91
+OUT_MAP_$99=^[92m   * Light Green   92
+OUT_MAP_$9E=^[93m   * Yellow        93
+OUT_MAP_$9A=^[94m   * Light Blue    94
+OUT_MAP_$95=^[95m   * Brown         95 (Bright Magenta)
+OUT_MAP_$9F=^[96m   * Cyan          96
+OUT_MAP_$05=^[97m   * White         97
+OUT_MAP_$93=^[2J^[H * Clear screen
+OUT_MAP_$13=^[H     * Home screen
+OUT_MAP_$12=^[|C
+OUT_MAP_$5F=UE05F   * Left Arrow
+OUT_MAP_$5E=UE05E   * Up Arrow
+OUT_MAP_$7E=UE07E   * PI
+OUT_MAP_$5C=UE05C   * Pound Sign
+OUT_MAP_$A0=UE0A0  * Empty Space
+OUT_MAP_$A1=UE0A1  * Left 1/2 block
+OUT_MAP_$A2=UE0A2  * Bottom 1/2 block
+OUT_MAP_$A3=UE0A3  * Upper 1/8 block
+OUT_MAP_$A4=UE0A4  * Lower 1/8 block
+OUT_MAP_$A5=UE0A5  * Left 1/4 block
+OUT_MAP_$A6=UE0A6  * Medium shade
+OUT_MAP_$A7=UE0A7  * Right 1/4 block
+OUT_MAP_$A8=UE0A8  * Bottom 1/2 medium shade
+OUT_MAP_$A9=UE0A9  * Upper left triangle
+OUT_MAP_$AA=UE0AA  * Right 2/8 block
+OUT_MAP_$AB=UE0AB  * Vertical and right
+OUT_MAP_$AC=UE0AC  * Quadrant lower right
+OUT_MAP_$AD=UE0AD  * Up and right corner
+OUT_MAP_$AE=UE0AE  * Down and left corner
+OUT_MAP_$AF=UE0AF  * Lower 1/4 block
+OUT_MAP_$B0=UE0B0  * Down and right corner
+OUT_MAP_$B1=UE0B1  * Up and horizontal
+OUT_MAP_$B2=UE0B2  * Down and horizontal
+OUT_MAP_$B3=UE0B3  * Left and vertical
+OUT_MAP_$B4=UE0B4  * Left 1/4 block
+OUT_MAP_$B5=UE0B5  * Left 3/8 block
+OUT_MAP_$B6=UE0B6  * Right 3/8 block
+OUT_MAP_$B7=UE0B7  * Upper 2/8 block
+OUT_MAP_$B8=UE0B8  * upper 3/8 block
+OUT_MAP_$B9=UE0B9  * Lower 3/8 block
+OUT_MAP_$BA=UE0BA  * Lower right corner
+OUT_MAP_$BB=UE0BB  * Quadrant lower left
+OUT_MAP_$BC=UE0BC  * Quadrant upper right
+OUT_MAP_$BD=UE0BD  * Up and left corner
+OUT_MAP_$BE=UE0BE  * Quadrant upper left
+OUT_MAP_$BF=UE0BF  * Quadrant upper left and lower right
+OUT_MAP_$C0=UE0C0  * Horizontal
+OUT_MAP_$C1=UE0C1  * Spade
+OUT_MAP_$C2=UE0C2  * Vertical
+OUT_MAP_$C3=UE0C3  * Horizontal
+OUT_MAP_$C4=UE0C4  * 3/8 horizontal
+OUT_MAP_$C5=UE0C5  * 2/8 horizontal
+OUT_MAP_$C6=UE0C6  * 5/8 horizontal
+OUT_MAP_$C7=UE0C7  * 3/8 vertical
+OUT_MAP_$C8=UE0C8  * 5/8 vertical
+OUT_MAP_$C9=UE0C9  * Arc down and left
+OUT_MAP_$CA=UE0CA  * Arc up and right
+OUT_MAP_$CB=UE0CB  * Arc up and left
+OUT_MAP_$CC=UE0CC  * Lower left corner
+OUT_MAP_$CD=UE0CD  * Diagonal upper left to lower right
+OUT_MAP_$CE=UE0CE  * Diagonal up right to lower left
+OUT_MAP_$CF=UE0CF  * Top left corner
+OUT_MAP_$D0=UE0D0  * Top right corner
+OUT_MAP_$D1=UE0D1  * Filled ball
+OUT_MAP_$D2=UE0D2  * 5/8 vertical
+OUT_MAP_$D3=UE0D3  * Heart
+OUT_MAP_$D4=UE0D4  * 2/8 horizontal
+OUT_MAP_$D5=UE0D5  * Arc down and right
+OUT_MAP_$D6=UE0D6  * Diagonal cross
+OUT_MAP_$D7=UE0D7  * Unfilled ball
+OUT_MAP_$D8=UE0D8  * Club
+OUT_MAP_$D9=UE0D9  * 6/8 vertical
+OUT_MAP_$DA=UE0DA  * Diamond
+OUT_MAP_$DB=UE0DB  * Vertical and horizontal
+OUT_MAP_$DC=UE0DC  * Left medium shade
+OUT_MAP_$DD=UE0DD  * Vertical
+OUT_MAP_$DE=UE0DE  * PI
+OUT_MAP_$DF=UE0DF  * Upper lefft triangle
+OUT_MAP_$E0=UE0E0  * Empty Space
+OUT_MAP_$E1=UE0E1  * Left 1/2 block
+OUT_MAP_$E2=UE0E2  * Bottom 1/2 block
+OUT_MAP_$E3=UE0E3  * Upper 1/8 block
+OUT_MAP_$E4=UE0E4  * Lower 1/8 block
+OUT_MAP_$E5=UE0E5  * Left 1/4 block
+OUT_MAP_$E6=UE0E6  * Medium shade
+OUT_MAP_$E7=UE0E7  * Right 1/4 block
+OUT_MAP_$E8=UE0E8  * Bottom 1/2 medium shade
+OUT_MAP_$E9=UE0E9  * Upper left triangle
+OUT_MAP_$EA=UE0EA  * Right 2/8 block
+OUT_MAP_$EB=UE0EB  * Vertical and right
+OUT_MAP_$EC=UE0EC  * Quadrant lower right
+OUT_MAP_$ED=UE0ED  * Up and right corner
+OUT_MAP_$EE=UE0EE  * Down and left corner
+OUT_MAP_$EF=UE0EF  * Lower 1/4 block
+OUT_MAP_$F0=UE0F0  * Down and right corner
+OUT_MAP_$F1=UE0F1  * Up and horizontal
+OUT_MAP_$F2=UE0F2  * Down and horizontal
+OUT_MAP_$F3=UE0F3  * Left and vertical
+OUT_MAP_$F4=UE0F4  * Left 1/4 block
+OUT_MAP_$F5=UE0F5  * Left 3/8 block
+OUT_MAP_$F6=UE0F6  * Right 3/8 block
+OUT_MAP_$F7=UE0F7  * Upper 2/8 block
+OUT_MAP_$F8=UE0F8  * upper 3/8 block
+OUT_MAP_$F9=UE0F9  * Lower 3/8 block
+OUT_MAP_$FA=UE0FA  * Lower right corner
+OUT_MAP_$FB=UE0FB  * Quadrant lower left
+OUT_MAP_$FC=UE0FC  * Quadrant upper right
+OUT_MAP_$FD=UE0FD  * Up and left corner
+OUT_MAP_$FE=UE0FE  * Quadrant upper left
+OUT_MAP_$FF=UE0FF  * PI
+********************************
+* Mapping for input characters
+*
+* When a key is proessed on the keyboard, if it is
+* an ANSI sequence, that is in the list, it will
+* be translated to a single character
+*
+* IN_MAP_<ascii>=<ansi-sequence>
+*
+********************************
+IN_MAP_$13=^[1~   * HOME
+IN_MAP_$94=^[2~   * INSERT
+IN_MAP_$7F=^[3~   * DELETE
+IN_MAP_$93=^[4~   * END
+IN_MAP_$1D=^[C    * RIGHT
+IN_MAP_$9D=^[D    * LEFT
+*IN_MAP_$13=$1B   * HOME
+*IN_MAP_$94=^[2~   * INSERT
+*IN_MAP_$7F=^[3~   * DELETE
+*IN_MAP_$93=^[4~   * END
+*IN_MAP_$1D=^[C    * RIGHT
+*IN_MAP_$9D=^[D    * LEFT

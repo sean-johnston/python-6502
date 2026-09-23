@@ -1,0 +1,139 @@
+********************************
+* Mapping for output characters
+*
+* When a character is sent to the output
+* what key sequence does it represent. 
+* 
+* OUT_MAP_<ascii>=<comma-delimited-seq|ansi-sequence|unicode>
+*
+* This uses unicode for the PET-ME font
+********************************
+OUT_MAP_$90=^[30m   * Black         30
+OUT_MAP_$1C=^[31m   * Red           31
+OUT_MAP_$1E=^[32m   * Green         32
+OUT_MAP_$1F=^[34m   * Blue          34
+OUT_MAP_$81=^[35m   * Orange        35 (Magenta)
+OUT_MAP_$9C=^[35m   * Purple        35
+OUT_MAP_$9B=^[37m   * Light Gray    37
+OUT_MAP_$98=^[37m   * Medium Gray   37
+OUT_MAP_$97=^[90m   * Dark Gray     90
+OUT_MAP_$96=^[91m   * Light Red     91
+OUT_MAP_$99=^[92m   * Light Green   92
+OUT_MAP_$9E=^[93m   * Yellow        93
+OUT_MAP_$9A=^[94m   * Light Blue    94
+OUT_MAP_$95=^[95m   * Brown         95 (Bright Magenta)
+OUT_MAP_$9F=^[96m   * Cyan          96
+OUT_MAP_$05=^[97m   * White         97
+
+OUT_MAP_$93=^[2J^[H * Clear screen
+OUT_MAP_$13=^[H     * Home screen
+#OUT_MAP_$12=^[|C
+OUT_MAP_$12=^#3
+OUT_MAP_$13=^#4
+
+OUT_MAP_$5F=UE21F   * Left Arrow
+OUT_MAP_$5E=UE21E   * Up Arrow
+OUT_MAP_$7E=UE05E   * PI
+OUT_MAP_$5C=UE21C   * Pound Sign
+
+OUT_MAP_$A0=UE060  * Empty Space
+OUT_MAP_$A1=UE061  * Left 1/2 block
+OUT_MAP_$A2=UE062  * Bottom 1/2 block
+OUT_MAP_$A3=UE063  * Upper 1/8 block
+OUT_MAP_$A4=UE064  * Lower 1/8 block
+OUT_MAP_$A5=UE065  * Left 1/4 block
+OUT_MAP_$A6=UE066  * Medium shade
+OUT_MAP_$A7=UE067  * Right 1/4 block
+OUT_MAP_$A8=UE068  * Bottom 1/2 medium shade
+OUT_MAP_$A9=UE069  * Upper left triangle
+OUT_MAP_$AA=UE06A  * Right 2/8 block
+OUT_MAP_$AB=UE06B  * Vertical and right
+OUT_MAP_$AC=UE06C  * Quadrant lower right
+OUT_MAP_$AD=UE06D  * Up and right corner
+OUT_MAP_$AE=UE06E  * Down and left corner
+OUT_MAP_$AF=UE06F  * Lower 1/4 block
+
+OUT_MAP_$B0=UE060  * Down and right corner
+OUT_MAP_$B1=UE061  * Up and horizontal
+OUT_MAP_$B2=UE062  * Down and horizontal
+OUT_MAP_$B3=UE063  * Left and vertical
+OUT_MAP_$B4=UE064  * Left 1/4 block
+OUT_MAP_$B5=UE065  * Left 3/8 block
+OUT_MAP_$B6=UE066  * Right 3/8 block
+OUT_MAP_$B7=UE067  * Upper 2/8 block
+OUT_MAP_$B8=UE068  * upper 3/8 block
+OUT_MAP_$B9=UE069  * Lower 3/8 block
+OUT_MAP_$BA=UE06A  * Lower right corner
+OUT_MAP_$BB=UE06B  * Quadrant lower left
+OUT_MAP_$BC=UE06C  * Quadrant upper right
+OUT_MAP_$BD=UE06D  * Up and left corner
+OUT_MAP_$BE=UE06E  * Quadrant upper left
+OUT_MAP_$BF=UE06F  * Quadrant upper left and lower right
+
+OUT_MAP_$C0=UE040  * Horizontal
+OUT_MAP_$C1=UE041  * Spade
+OUT_MAP_$C2=UE042  * Vertical
+OUT_MAP_$C3=UE043  * Horizontal
+OUT_MAP_$C4=UE044  * 3/8 horizontal
+OUT_MAP_$C5=UE045  * 2/8 horizontal
+OUT_MAP_$C6=UE046  * 5/8 horizontal
+OUT_MAP_$C7=UE047  * 3/8 vertical
+OUT_MAP_$C8=UE048  * 5/8 vertical
+OUT_MAP_$C9=UE049  * Arc down and left
+OUT_MAP_$CA=UE04A  * Arc up and right
+OUT_MAP_$CB=UE04B  * Arc up and left
+OUT_MAP_$CC=UE04C  * Lower left corner
+OUT_MAP_$CD=UE04D  * Diagonal upper left to lower right
+OUT_MAP_$CE=UE04E  * Diagonal up right to lower left
+OUT_MAP_$CF=UE04F  * Top left corner
+
+OUT_MAP_$D0=UE050  * Top right corner
+OUT_MAP_$D1=UE051  * Filled ball
+OUT_MAP_$D2=UE052  * 5/8 vertical
+OUT_MAP_$D3=UE053  * Heart
+OUT_MAP_$D4=UE054  * 2/8 horizontal
+OUT_MAP_$D5=UE055  * Arc down and right
+OUT_MAP_$D6=UE056  * Diagonal cross
+OUT_MAP_$D7=UE057  * Unfilled ball
+OUT_MAP_$D8=UE058  * Club
+OUT_MAP_$D9=UE059  * 6/8 vertical
+OUT_MAP_$DA=UE05A  * Diamond
+OUT_MAP_$DB=UE05B  * Vertical and horizontal
+OUT_MAP_$DC=UE05C  * Left medium shade
+OUT_MAP_$DD=UE05D  * Vertical
+OUT_MAP_$DE=UE05E  * PI
+OUT_MAP_$DF=UE05F  * Upper lefft triangle
+
+OUT_MAP_$E0=UE060  * Empty Space
+OUT_MAP_$E1=UE061  * Left 1/2 block
+OUT_MAP_$E2=UE062  * Bottom 1/2 block
+OUT_MAP_$E3=UE063  * Upper 1/8 block
+OUT_MAP_$E4=UE064  * Lower 1/8 block
+OUT_MAP_$E5=UE065  * Left 1/4 block
+OUT_MAP_$E6=UE066  * Medium shade
+OUT_MAP_$E7=UE067  * Right 1/4 block
+OUT_MAP_$E8=UE068  * Bottom 1/2 medium shade
+OUT_MAP_$E9=UE069  * Upper left triangle
+OUT_MAP_$EA=UE06A  * Right 2/8 block
+OUT_MAP_$EB=UE06B  * Vertical and right
+OUT_MAP_$EC=UE06C  * Quadrant lower right
+OUT_MAP_$ED=UE06D  * Up and right corner
+OUT_MAP_$EE=UE06E  * Down and left corner
+OUT_MAP_$EF=UE06F  * Lower 1/4 block
+
+OUT_MAP_$F0=U2654  * Down and right corner
+OUT_MAP_$F1=U2655  * Up and horizontal
+OUT_MAP_$F2=U2656  * Down and horizontal
+OUT_MAP_$F3=U2657  * Left and vertical
+OUT_MAP_$F4=U2658  * Left 1/4 block
+OUT_MAP_$F5=U2659  * Left 3/8 block
+OUT_MAP_$F6=U265A  * Right 3/8 block
+OUT_MAP_$F7=U265B  * Upper 2/8 block
+OUT_MAP_$F8=U265C  * upper 3/8 block
+OUT_MAP_$F9=U265D  * Lower 3/8 block
+OUT_MAP_$FA=U265E  * Lower right corner
+OUT_MAP_$FB=U265F  * Quadrant lower left
+OUT_MAP_$FC=UE07C  * Quadrant upper right
+OUT_MAP_$FD=UE07D  * Up and left corner
+OUT_MAP_$FE=UE07E  * Quadrant upper left
+OUT_MAP_$FF=UE15E  * PI
